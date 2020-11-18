@@ -6,20 +6,31 @@ public class Ex11 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-		int num = sc.nextInt();
-		
-		int sum=0;
-		
-		for(int i=1;i<=num;i++ ) {
-			sum = sum+num;
-			if(num%i!=0) {
-				System.out.println("결과값: "+ sum+num );
-			}
-		}
-		
-		
+	       Scanner sc = new Scanner(System.in);
+	       
+	       System.out.println("숫자를 입력해주세요");
+	       
+	       int num =sc.nextInt();
+	       
+	       int sum= 0;
+	       
+	       int i=0;
+	       while(i<=num) {
+	    	   
+	    	   if(sum%2==1) {
+	    		   sum=sum+i;
+	    		   System.out.println("결과값: "+ sum);
+	    		   i++; }
+	       }
+	    	   
+	    	   
+
+	    		 
+	    			 
+	    		
+	    		 
+	       
+	       
 		
 		sc.close();
 	}
